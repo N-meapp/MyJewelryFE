@@ -9,6 +9,7 @@ export default function CategoryHeader() {
         <>
             <div className="w-[80%] mx-auto h-[60px] mt-[69px] flex justify-between">
                 <img onClick={()=>{
+                    
                     navigate('/')
                 }} className="h-fit cursor-pointer" src='/assets/Images/logo/logo.png' ></img>
                 <div className='w-[60px] rounded-full'>
