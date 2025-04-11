@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import Categories from "./Pages/Category/Categories";
+import Categories from "./Pages/Categories";
 
 export default function App() {
   return (
