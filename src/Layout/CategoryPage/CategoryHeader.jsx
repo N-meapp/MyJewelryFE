@@ -1,10 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import CategoryTab from "../../Components/Tabs/CategoryTab";
 
 export default function CategoryHeader() {
+
+    const navigate = useNavigate()
+
     return (
         <>
             <div className="w-[80%] mx-auto h-[60px] mt-[69px] flex justify-between">
-                <img className="h-fit" src='/assets/Images/logo/image 94.png' ></img>
+                <img onClick={()=>{
+                    
+                    navigate('/')
+                }} className="h-fit cursor-pointer" src='/assets/Images/logo/logo.png' ></img>
                 <div className='w-[60px] rounded-full'>
                     <img className="w-full h-full rounded-full object-cover" src='/assets/Images/category/kid.png'></img>
                 </div>

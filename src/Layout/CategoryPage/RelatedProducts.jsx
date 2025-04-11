@@ -1,7 +1,6 @@
 import { useState } from "react";
 import SlidingButton from "../../Components/Buttons/SlidingButton";
 import ProductCard from "../../Components/Cards/ProductCard";
-import RelatedProductCard from "../../Components/Cards/RelatedProductCard";
 import { golds } from "../../constants/products";
 
 export default function RelatedProducts(){
@@ -48,7 +47,7 @@ export default function RelatedProducts(){
     <div className="w-max flex gap-[21px]">
       {golds?.map((item, i) => {
         if (i < 4) {
-          return <RelatedProductCard key={i} item={item} />;
+          return <ProductCard key={i} item={item} />;
         }
       })}
     </div>
